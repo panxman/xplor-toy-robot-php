@@ -1,6 +1,6 @@
 <?php
 include 'model/ToyRobot.php';
-include 'utils/utils.php';
+include 'utils/Utils.php';
 
 // The path to the Commands file
 const FILENAME = __DIR__ . DIRECTORY_SEPARATOR . "commands.txt";
@@ -30,7 +30,7 @@ if ($inputMethod === "FILE") {
         $line = trim($line);
 
         // Run each command
-        parseCommand($robot, $line);
+        Utils::parseCommand($robot, $line);
     }
 
     // Close File
@@ -48,7 +48,7 @@ if ($inputMethod === "CLI") {
         $userInput = strtoupper($userInput);
 
         if ($userInput !== "EXIT") {
-            parseCommand($robot, $userInput);
+            Utils::parseCommand($robot, $userInput);
         }
     }
 }
