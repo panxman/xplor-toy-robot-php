@@ -1,5 +1,5 @@
 <?php
-include 'Entity/ToyRobot.php';
+include 'model/ToyRobot.php';
 include 'utils/utils.php';
 
 // The path to the Commands file

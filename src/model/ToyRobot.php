@@ -17,13 +17,25 @@ class ToyRobot {
         $this->y = -1;
         $this->facing = "";
         $this->hasBeenPlaced = false;
-
-        print "Robot has been created!\n";
     }
 
     /* Deconstructor */
     function __destruct() {
-        print "The robot is being shut down!";
+        // print "The robot is being shut down!";
+    }
+
+    /* Getters for the testing */
+    function getX() {
+        return $this->x;
+    }
+    function getY() {
+        return $this->y;
+    }
+    function getFacing() {
+        return $this->facing;
+    }
+    function getHasBeenPlaced() {
+        return $this->hasBeenPlaced;
     }
 
     /* Place the Robot onto the tabletop */
